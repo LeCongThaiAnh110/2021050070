@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <style>
+        body {
+            background-color: #2F2C38;
+            color: white;
+        }
+
+        .danh-sach-muc {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .lien-ket-muc {
+            text-decoration: none;
+            color: #DBDBDD;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .muc {
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .muc:hover {
+            background-color: #3A3845;
+        }
+
+        .dang-chon {
+            color: white;
+            border-bottom: 2px solid red;
+        }
+
+        .logo {
+            width: 10%;
+        }
+
+        .avatar {
+            width: 80%;
+            border-radius: ;
+        }
+
+        .banner{
+            background-color: aliceblue;
+            width: 95%;
+            height: 40vh;
+            margin: 20px auto;
+            border-radius: 20px;
+        }
+
+        .banner-anh{
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .danh-sach-the-loai{
+            width: 95%;
+            background-color: red;
+            height: 20vh;
+            margin: 20px auto;
+        }
+
+        .phim{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .phim-poster{
+            width: 24%;
+            height: 15vh;
+
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="danh-muc">
+            <ul class="danh-sach-muc">
+
+                <li class="muc">
+                    <a href="#" class="lien-ket-muc">
+                        <img src="logo.svg" alt="Logo" class="logo">
+                    </a>
+                </li>
+
+                <li class="muc">
+                    <a href="#" class="lien-ket-muc dang-chon">
+                        Trang chu
+                    </a>
+                </li>
+
+                <li class="muc">
+                    <a href="#" class="lien-ket-muc">
+                        Nhan Vat
+                    </a>
+                </li>
+
+                <li class="muc">
+                    <a href="#" class="lien-ket-muc">
+                        Series
+                    </a>
+                </li>
+
+                <li class="muc">
+                    <a href="#" class="lien-ket-muc">
+                        Phim
+                    </a>
+                </li>
+
+                <li class="muc">
+                    <a href="#" class="lien-ket-muc">
+                        Moi & Pho Bien
+                    </a>
+                </li>
+
+                <li class="muc">
+                    <a href="#" class="lien-ket-muc">
+                        Netflix cua toi
+                    </a>
+                </li>
+
+                <li class="muc">
+                    <a href="#" class="lien-ket-muc">
+                        Duyet theo ngon ngu
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="chuc-nang">
+            <div class="tim-kiem"></div>
+
+            <div class="thong-tin">
+                <img class="avatar" src="avatar.jpg" alt="Avatar">
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div  class="banner">
+            <img class="banner-anh" src="banner.jpg" alt="">
+        </div>
+        <div class="danh-sach-the-loai">
+            <div class="the-loai">
+                <div class="ten-the-loai">Co The Ban Chua Xem</div>
+                <div class="danh-sach-phim">
+                    <div class="phim">
+                        <div src="banner.jpg" class="phim-poster"></div>
+                        <div src="banner.jpg" class="phim-poster"></div>
+                        <div src="banner.jpg" class="phim-poster"></div>
+                        <div src="banner.jpg" class="phim-poster"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
