@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+2021050070/Bài 4<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-
     <style>
         body {
             background-color: #2F2C38;
             color: white;
+            margin: 0;
+        }
+
+        header {
+            height: 70px;
+            padding: 0 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #141414;
+        }
+
+        .danh-muc {
+            flex: 1;
         }
 
         .danh-sach-muc {
@@ -21,12 +34,6 @@
         .lien-ket-muc {
             text-decoration: none;
             color: #DBDBDD;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
         .muc {
@@ -44,127 +51,203 @@
         }
 
         .logo {
-            width: 10%;
+            width: 90px;
+            display: block;
         }
 
         .avatar {
             width: 80%;
-            border-radius: ;
         }
 
-        .banner{
-            background-color: aliceblue;
+        /* BANNER */
+        .banner {
             width: 95%;
-            height: 40vh;
-            margin: 20px auto;
-            border-radius: 20px;
+            height: 400px;
+            margin: 25px auto 40px auto;
+            overflow: hidden;
         }
 
-        .banner-anh{
+        .banner-anh {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 20px;
+            display: block;
         }
 
-        .danh-sach-the-loai{
+        /* DANH SÁCH THỂ LOẠI */
+        .danh-sach-the-loai {
             width: 95%;
-            background-color: red;
-            height: 20vh;
-            margin: 20px auto;
+            margin: 30px auto;
         }
 
-        .phim{
+        .ten-the-loai h2 {
+            margin-bottom: 15px;
+        }
+
+        .danh-sach-phim {
+            width: 100%;
+        }
+
+        .phim {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .phim-poster {
+            width: 16%;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 5px;
+            background-color: aliceblue;
+        }
+
+        .phim-poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .danh-sachh-nhan-vat {
             display: flex;
             justify-content: space-between;
         }
 
-        .phim-poster{
-            width: 24%;
-            height: 15vh;
-
-            background-color: aliceblue;
+        .nhan-vat {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
         }
     </style>
 </head>
-
 <body>
-
     <header>
         <nav class="danh-muc">
             <ul class="danh-sach-muc">
-
+                <li class="muc"><a href="#" class="lien-ket-muc"><img src="logo.svg" alt="Logo" class="logo"></a></li>
                 <li class="muc">
-                    <a href="#" class="lien-ket-muc">
-                        <img src="logo.svg" alt="Logo" class="logo">
-                    </a>
+                    <a href="#" class="lien-ket-muc dang-chon">Trang chu</a>
                 </li>
-
                 <li class="muc">
-                    <a href="#" class="lien-ket-muc dang-chon">
-                        Trang chu
-                    </a>
+                    <a href="#" class="lien-ket-muc">Nhan Vat</a>
                 </li>
-
                 <li class="muc">
-                    <a href="#" class="lien-ket-muc">
-                        Nhan Vat
-                    </a>
+                    <a href="#" class="lien-ket-muc">Series</a>
                 </li>
-
                 <li class="muc">
-                    <a href="#" class="lien-ket-muc">
-                        Series
-                    </a>
+                    <a href="#" class="lien-ket-muc">Phim</a>
                 </li>
-
                 <li class="muc">
-                    <a href="#" class="lien-ket-muc">
-                        Phim
-                    </a>
+                    <a href="#" class="lien-ket-muc">Moi & Pho Bien</a>
                 </li>
-
                 <li class="muc">
-                    <a href="#" class="lien-ket-muc">
-                        Moi & Pho Bien
-                    </a>
+                    <a href="#" class="lien-ket-muc">Netflix cua toi</a>
                 </li>
-
                 <li class="muc">
-                    <a href="#" class="lien-ket-muc">
-                        Netflix cua toi
-                    </a>
+                    <a href="#" class="lien-ket-muc">Duyet theo ngon ngu</a>
                 </li>
-
-                <li class="muc">
-                    <a href="#" class="lien-ket-muc">
-                        Duyet theo ngon ngu
-                    </a>
-                </li>
-
             </ul>
         </nav>
-
         <div class="chuc-nang">
             <div class="tim-kiem"></div>
-
             <div class="thong-tin">
                 <img class="avatar" src="avatar.jpg" alt="Avatar">
             </div>
         </div>
-
     </header>
     <main>
-        <div  class="banner">
-            <img class="banner-anh" src="banner.jpg" alt="">
+        <!-- BANNER -->
+        <div class="banner">
+            <img src="banner.jpg" alt="Banner" class="banner-anh">
         </div>
+        <!-- HÀNG PHIM 1 -->
         <div class="danh-sach-the-loai">
             <div class="the-loai">
-                <div class="ten-the-loai">Co The Ban Chua Xem</div>
+                <div class="ten-the-loai">
+                    <h2>Có Thể Bạn Chưa Xem</h2>
+                </div>
                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <div src="banner.jpg" class="phim-poster"></div>
-                        <div src="banner.jpg" class="phim-poster"></div>
-                        <div src="banner.jpg" class="phim-poster"></div>
-                        <div src="banner.jpg" class="phim-poster"></div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 1">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 2">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 3">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 4">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 5">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HÀNG PHIM 2 -->
+        <div class="danh-sach-the-loai">
+            <div class="the-loai">
+                <div class="ten-the-loai">
+                    <h2>Phim Phổ Biến</h2>
+                </div>
+                <div class="danh-sach-phim">
+                    <div class="phim">
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 1">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 2">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 3">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 4">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 5">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HÀNG PHIM 3 -->
+        <div class="danh-sach-the-loai">
+            <div class="the-loai">
+                <div class="ten-the-loai">
+                    <h2>Phim Mới & Phổ Biến</h2>
+                </div>
+                <div class="danh-sach-phim">
+                    <div class="phim">
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 1">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 2">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 3">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 4">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 5">
+                        </div>
+                        <div class="phim-poster">
+                            <img src="banner.jpg" alt="Phim 6">
+                        </div>
                     </div>
                 </div>
             </div>

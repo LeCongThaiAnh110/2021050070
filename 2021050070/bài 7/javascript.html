@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width", initial>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <script>
+        <!-- Internal JavaScript -->
+            //in ra màn hình
+            document.writeln("Hello World!<br>");
+            //Khai báo biến
+            var name = "Thái Anh<br>";
+            document.writeln(name);
+            name="ly<br>";
+            document.writeln(name);
+            var year = 2026;
+            document.writeln(year);
+            //Phép toán
+            var soThuNhat = 10;
+            var soThuHai = 5;
+            var ketQua=0;
+            // cộng +
+            document.writeln("<br> Kết quả soThuNhat + soThuHai la: ");
+            ketQua = soThuNhat + soThuHai;
+            document.writeln(ketQua);
+            // trừ -
+            document.writeln("<br> Kết quả soThuNhat - soThuHai la: ");
+            ketQua = soThuNhat - soThuHai;
+            document.writeln(ketQua);
+            // nhân *
+            document.writeln("<br> Kết quả soThuNhat * soThuHai la: ");
+            ketQua = soThuNhat * soThuHai;
+            document.writeln(ketQua);
+            // chia /
+            document.writeln("<br> Kết quả soThuNhat / soThuHai la: ");
+            ketQua = soThuNhat / soThuHai;
+            document.writeln(ketQua);
+            // %
+            document.writeln("<br> Kết quả soThuNhat % soThuHai la: ");
+            ketQua = soThuNhat % soThuHai;
+            document.writeln(ketQua);
+            // ++
+            document.writeln("<br>");
+            document.writeln(soThuNhat++);
+            // --
+            document.writeln("<br>");
+            document.writeln(soThuNhat--);
+            // +=
+            soThuNhat += soThuHai;
+            document.writeln(soThuNhat);
+            //-=
+            soThuNhat -= soThuHai;
+            document.writeln(soThuNhat);
+            var ho = "Do";
+            document.writeln("<br>" + ho +" "+ name);
+            document.writeln("<br>");
+            document.writeln(ho.length);
+            //Kiem tra kieu du lieu cua bien
+            document.writeln(typeof(ho));
+            document.writeln("<br>");
+            //
+            var hoVaTen = "Luong Quang Anh";
+            document.writeln(hoVaTen.indexOf("Q"));
+            document.writeln("<br>");
+            document.writeln(hoVaTen.includes("e"));
+            document.writeln("<br>");
+            document.writeln(hoVaTen.startsWith("Luong"));
+            document.writeln(hoVaTen.replace("Luong","Do"));
+            document.writeln("<br>");
+            document.writeln(hoVaTen.toUpperCase());
+            document.writeln("<br>");
+            document.writeln(hoVaTen.toLowerCase());
+
+        </script>
+        <!-- External JavaScript -->
+         <script src="script.js"></script>
+    </body>
+</html>
